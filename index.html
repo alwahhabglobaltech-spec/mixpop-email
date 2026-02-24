@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+<script>
+var ua = navigator.userAgent;
+if (/android/i.test(ua)) {
+  window.location.replace('./android/');
+} else if (/iphone|ipad|ipod/i.test(ua) || /macintosh/i.test(ua) || /windows/i.test(ua)) {
+  window.location.replace('./apple/');
+}
+</script>
+</body>
+</html>
